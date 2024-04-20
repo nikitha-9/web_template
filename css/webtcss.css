@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+*,*:after,*:before{
+	box-sizing:border-box;/*removes unwanted padding in asides or anywhere*/
+}
+.clearfix::after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+	width: 980px;
+	margin: 0 auto;/*makes div box in center*/
+}
+#wrapper{
+	background-color: #F8E996;
+	overflow: hidden;/* to extend container size so that logo can fit into it*/
+}
+.nav>ul>li{
+	list-style-type: none;
+	display:inline-block;
+	float: right;
+	margin-top: 60px;
+	font-size:23px;
+}
+.nav>ul>li>a{
+	text-decoration: none; /* to remove underline of a tag*/
+	margin: 0 10px;
+	font-family:poppins;
+
+}
+.logo{
+	float: left;
+	margin-top: 20px;
+	background-color:#F8E996;
+}
+
+nav>ul{
+	float: right;
+}
+.article p{
+	font-size: 18px;
+	font-family: sans-serif;
+	margin: 10px 8px;/*to maintain gap b/w banner and para*/
+
+}
+.article>p>strong{
+	font-size: 20px;
+	color: blue;
+}
+.banner{
+	position: relative;
+}
+.banner h1{
+	position: absolute;
+	color: black;
+	right:50px;
+	top:100px;
+}
+.asides>.aside{
+	width: 300px;/* 980 which is container size is divided to 3 aside i.e 1 aside=300px*/
+	border:2px solid red;
+	padding: 10px 5px;
+	display: inline-block;
+	margin: 20px 12px;
+	background-color:#EBEBCE ;
+
+}
+.asides>.aside>p{
+	text-align: justify;/*used to make equal lenth like a square in para's*/
+    font-family: poppins;
+
+}
+.asides>.aside>img{
+	margin: 10px 0;
+}
+.footer{
+	background-color: #999966;
+	border: 2px black;
+	padding-left: 300px;
+	height: 50px;
+	padding-top: 20px;
+	font-size: 20px;
+	font-family: arial;
+}
